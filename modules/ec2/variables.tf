@@ -1,6 +1,6 @@
 variable "server_name" {
   description = "Name of the EC2 instance"
-  type        = string
+  type        = list(string)
 }
 
 variable "vpc_id" {

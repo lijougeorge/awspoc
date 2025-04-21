@@ -125,7 +125,7 @@ variable "efs_throughput_mode" {
 
 variable "server_name" {
   description = "Name of the EC2 instance"
-  type        = string
+  type        = list(string)
 }
 
 variable "instance_type" {
