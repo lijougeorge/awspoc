@@ -155,7 +155,7 @@ resource "aws_launch_template" "eks_nodes" {
   for_each      = local.eks_environments
   name_prefix   = "${each.key}-launch-template"
   description   = "Launch template for EKS managed nodes in ${each.key}"
-  instance_type = "m5.xlarge"
+  instance_type = "t3.micro"
 
   block_device_mappings {
     device_name = "/dev/xvda"
