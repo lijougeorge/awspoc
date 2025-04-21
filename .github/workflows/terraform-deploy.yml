@@ -17,7 +17,7 @@ on:
       account_id:
         required: false
         type: string
-        default: '232247293372'
+        default: '339712873428'
       region:
         required: false
         type: string
