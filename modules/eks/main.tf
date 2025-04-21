@@ -1,6 +1,6 @@
 locals {
   environment = var.environment
-  project     = "ihub"
+  project     = "demo"
 
   common_tags = {
     Project     = local.project
@@ -161,7 +161,7 @@ resource "aws_launch_template" "eks_nodes" {
     device_name = "/dev/xvda"
 
     ebs {
-      volume_size           = 200
+      volume_size           = 50
       volume_type           = "gp3"
       encrypted             = true
       delete_on_termination = true
