@@ -8,7 +8,7 @@ REGION=$4
 ENVIRONMENT=${5:-dev}
 
 TFVARS_JSON="terraform.tfvars.json"
-S3_BUCKET="teraform-tfstate-bucket-${ACCOUNT_ID}"
+S3_BUCKET="terraform-tfstate-bucket-${ACCOUNT_ID}"
 
 run_terraform() {
     local MODULE=$1
