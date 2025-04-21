@@ -54,7 +54,7 @@ jobs:
       - name: Configure AWS Credentials
         uses: aws-actions/configure-aws-credentials@v2
         with:
-          role-to-assume: arn:aws:iam::${{ inputs.account_id }}:role/Eviden-DSS-Automation
+          role-to-assume: arn:aws:iam::${{ inputs.account_id }}:role/lab-aws-Automation
           aws-region: ${{ inputs.region }}
 
       - name: Verify AWS Authentication
