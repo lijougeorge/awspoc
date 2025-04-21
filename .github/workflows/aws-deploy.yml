@@ -1,4 +1,4 @@
-name: Eviden | Terraform Deployment
+name:  Terraform Deployment
 
 on:
   workflow_dispatch:
