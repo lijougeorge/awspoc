@@ -1,6 +1,6 @@
 locals {
   environment = var.environment
-  project     = "demo"
+  project     = "ihub"
 
   common_tags = {
     Project     = local.project
